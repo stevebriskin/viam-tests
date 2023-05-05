@@ -31,10 +31,6 @@ function positionInput() {
 // This function runs a motor component with a given named on your robot.
 // Feel free to replace it whatever logic you want to test out!
 async function run(client: VIAM.RobotClient) {
-  // Replace with the name of a motor on your robot.
-  const name = '<MOTOR NAME>';
-  const mc = new VIAM.MotorClient(client, name);
-
   button().disabled = true;
 
   const m = new servoApi.MoveRequest()
